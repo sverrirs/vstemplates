@@ -1,0 +1,70 @@
+﻿<VSTemplate Version="3.0.0"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
+            Type="Item">
+
+  <!--
+    Categorizes the template and defines how it displays in either the New Project or the Add New Item dialog box. -->
+  <TemplateData>
+    
+    <Name>C++ Unit Test Template</Name>
+    <Description>A template for a C++ unit test class</Description>
+    
+    <!-- http://www.flaticon.com/  and then https://www.icoconverter.com/ -->
+    <Icon>templateicon.ico</Icon>
+    <PreviewImage>templatepreviewimage.png</PreviewImage>
+    
+    <!-- One of: CSharp/VisualBasic/VC/Web -->
+    <ProjectType>VC</ProjectType>
+    
+    <!--
+    If the ProvideDefaultName element is false, the Name boxes of the Add New Item and New Project dialog boxes contain the value <Enter_name>.
+    Use the DefaultName element to specify the default name of the project or item in the Add New Item and New Project dialog boxes. -->
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <DefaultName>test_MYCLASSNAME.cpp</DefaultName>
+
+    <!--
+    If a .vstemplate file omits the TemplateID element, then the Name element is used as the identifier for the template.
+    The value of the TemplateID element is used along with project system registration 
+    (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\<version number>\Projects\) to filter templates that appear in the Add New Item dialog box.
+    https://msdn.microsoft.com/en-us/library/ms171388.aspx -->
+    <TemplateID>DBC2C981-B884-4ED4-94FE-70A300C7FAC5</TemplateID>
+    
+  </TemplateData>
+  
+  <TemplateContent>
+    <References/>
+
+    <!--
+      The ProjectItem element accepts different attributes depending on whether the template is for a project or an item.
+      https://msdn.microsoft.com/en-us/library/ms171408.aspx -->
+    <ProjectItem
+      ReplaceParameters="true"
+      TargetFileName="$fileinputname$.cpp">unittest.cpp</ProjectItem>
+
+    <!--
+      Contains a custom parameter name and value to use when a project or item is created from the template.
+      https://msdn.microsoft.com/en-us/library/8wba5h42.aspx -->
+    <CustomParameters>
+      <CustomParameter Name="$email_domain$" Value="@company.com"/>
+      <CustomParameter Name="$company_name$" Value="The Company"/>
+      <CustomParameter Name="$company_website$" Value="https://www.company.com"/>
+    </CustomParameters>
+
+  </TemplateContent>
+  
+  <!--
+    The registration elements for customizing the template wizard. 
+    https://msdn.microsoft.com/en-us/library/ms171411.aspx -->
+  <WizardExtension>
+    <Assembly>VSItemTemplateVISX, version=1.0.0.0, Culture=neutral, PublicKeyToken=618a35258b37dd1f</Assembly>
+    <FullClassName>VSItemTemplateVISX.CppTemplates.UnitTestTemplate.TemplateWizard</FullClassName>
+  </WizardExtension>
+  
+  <WizardData>
+    <!-- 
+      Any XML can be specified in this element. The XML will be passed as a parameter to the custom wizard extension, 
+      allowing the extension to use the contents of this element. No validation is done on this data.
+      The contents of the WizardData element are passed, unchanged, as a parameter inside the string dictionary of 
+      parameters in the IWizard.RunStarted method. The parameter is named $WizardData$. -->
+  </WizardData>
+</VSTemplate>

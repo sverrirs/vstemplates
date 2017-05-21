@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSItemTemplateVISX", "VSItemTemplateVISX\VSItemTemplateVISX.csproj", "{18F7A012-A9BC-45DC-8E83-7BA15AD42906}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateFiles", "TemplateFiles", "{2FA5BD1B-657D-4442-B22E-3958C69B3632}"
+	ProjectSection(SolutionItems) = preProject
+		VSItemTemplateVISX\CppTemplates\UnitTestTemplate\templateicon.ico = VSItemTemplateVISX\CppTemplates\UnitTestTemplate\templateicon.ico
+		VSItemTemplateVISX\CppTemplates\UnitTestTemplate\templatepreviewimage.png = VSItemTemplateVISX\CppTemplates\UnitTestTemplate\templatepreviewimage.png
+		VSItemTemplateVISX\CppTemplates\UnitTestTemplate\unittest.cpp = VSItemTemplateVISX\CppTemplates\UnitTestTemplate\unittest.cpp
+		VSItemTemplateVISX\CppTemplates\UnitTestTemplate\UnitTestTemplate.vstemplate = VSItemTemplateVISX\CppTemplates\UnitTestTemplate\UnitTestTemplate.vstemplate
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSItemTeamplateFiles", "VSItemTeamplateFiles\VSItemTeamplateFiles.csproj", "{1AA67ED5-0B79-4E1C-B3A7-C0F1E53C022A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18F7A012-A9BC-45DC-8E83-7BA15AD42906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F7A012-A9BC-45DC-8E83-7BA15AD42906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F7A012-A9BC-45DC-8E83-7BA15AD42906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F7A012-A9BC-45DC-8E83-7BA15AD42906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA67ED5-0B79-4E1C-B3A7-C0F1E53C022A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA67ED5-0B79-4E1C-B3A7-C0F1E53C022A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA67ED5-0B79-4E1C-B3A7-C0F1E53C022A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA67ED5-0B79-4E1C-B3A7-C0F1E53C022A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
